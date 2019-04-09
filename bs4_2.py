@@ -27,11 +27,12 @@ and they lived at the bottom of a well.</p>
 <p class="story">...</p>
 """
 
-
 soup = BeautifulSoup(html_doc,"lxml")
 
-# print(soup.prettify())
-
+# 将一段文档传入BeautifulSoup 的构造方法,
+# 就能得到一个文档的对象, 可以传入一段字符串或一个文件句柄.
+# soup = BeautifulSoup(open("index.html"))
+# soup = BeautifulSoup("<html>data</html>")
 
 print(soup.title)
 # <title>The Dormouse's story</title>
